@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c2d5e15-ffef-4283-a3f6-674eb53450e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layouts/main.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/footer.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/header.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/cubes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/cube.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/express.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/404.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/create.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/create.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/create-cube.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/create-cube.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cube.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cube.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/details.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/details.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
     </list>
@@ -58,6 +54,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arene\Documents\Node js\Workshop 1 - Express.js and Templating\views\partials" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -80,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591545523146</updated>
-      <workItem from="1591545525689" duration="9783000" />
+      <workItem from="1591545525689" duration="13407000" />
     </task>
     <task id="LOCAL-00001" summary="feat: create cube model and save cube in the db">
       <created>1591555079166</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591555218068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add all routes pages and fix hbs templates">
+      <created>1591557289906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591557289906</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: create cube model and save cube in the db" />
     <MESSAGE value="ignoring db file" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignoring db file" />
+    <MESSAGE value="feat: add all routes pages and fix hbs templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add all routes pages and fix hbs templates" />
   </component>
 </project>
