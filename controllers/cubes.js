@@ -6,13 +6,24 @@ const getAllCubes = async () => {
     return cubes;
 };
 
-const getCube = async (id) => {
+const getCubeWithAccessories = async (id) => {
     // With lean it returns plain js object, not a mongoose one
-    const cube = await Cube.findById(id).lean();
+    const cube = await Cube.findById(id).populate('accessories').lean();
+    console.log(cube);
     return cube;
 };
 
+const updateCube = async (id, accessoryId) => {
+    // With lean it returns plain js object, not a mongoose one
+    await Cube.findByIdAndUpdate(id, {
+        $addToSet: {
+            accessories: [accessoryId]
+        }
+    })
+}
+
 module.exports = {
     getAllCubes,
-    getCube
+    getCubeWithAccessories,
+    updateCube
 };
