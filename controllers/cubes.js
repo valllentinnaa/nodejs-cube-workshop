@@ -1,13 +1,18 @@
-const fs = require('fs')
-const path = require('path')
-const {getCubes} = require('./database');
+const Cube = require('../models/cube');
 
-const getAllCubes = (callback) => {
-    getCubes((cubes) => {
-        callback(cubes);
-    });
-}
+const getAllCubes = async () => {
+    // With lean it returns plain js object, not a mongoose one
+    const cubes = await Cube.find().lean();
+    return cubes;
+};
+
+const getCube = async (id) => {
+    // With lean it returns plain js object, not a mongoose one
+    const cube = await Cube.findById(id).lean();
+    return cube;
+};
 
 module.exports = {
-    getAllCubes
-}
+    getAllCubes,
+    getCube
+};
