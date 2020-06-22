@@ -9,7 +9,7 @@ const getAllCubes = async () => {
 const getCubeWithAccessories = async (id) => {
     // With lean it returns plain js object, not a mongoose one
     const cube = await Cube.findById(id).populate('accessories').lean();
-    console.log(cube);
+
     return cube;
 };
 
